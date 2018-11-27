@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock, Paper, Scissors, Spock, Lizard Game</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Rock, Paper, Scissors, Spock, Lizard Game</h1>
+    </header>
+
+    <div class="score">
+      <div id="user" class="icon">You</div>
+      <div id="comp" class="icon">Computer</div>
+      <span id="user-score">0</span> : <span id="comp-score">0</span> 
+    </div>
+
+    <div class="result">
+      <p>Spock vaporizes rock. You won! </p>
+    </div>
+
+    <div class="choices">
+
+      <div id="rock" class="choice">
+        <img width="72" height="72" src="/imgs/rock.png" alt="">
+      </div>
+
+    <div id="paper" class="choice">
+        <img width="72" height="72" src="/imgs/paper.png" alt="">
+      </div>  
+
+    <div id="scissors" class="choice">
+        <img width="72" height="72" src="/imgs/scissors.png" alt="">
+      </div>
+
+    <div id="spock" class="choice">
+        <img width="72" height="72" src="/imgs/spock.png" alt="">
+      </div>
+
+    <div id="lizard" class="choice">
+        <img width="72" height="72" src="/imgs/lizard.png" alt="">
+      </div>
+
+    </div>
+
+    <div>
+      <p id="message">Pick Your Poison!</p>
+    </div>
+  </div>
+
+  <script src="./app.js" type="text/javascript"></script>
+
+</body>
+</html>
