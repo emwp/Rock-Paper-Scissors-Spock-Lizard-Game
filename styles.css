@@ -1,28 +1,92 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+html {
+	box-sizing: border-box;
+}
+
 * {
   font-family: 'Ubuntu', sans-serif; 
+  margin: 0px;
+  padding: 0px;
 }
 
+body {
+  background: #45B6D8;
+  color: #fff;
+  font-size: 1.5rem;
+}
 
+.container {
+  text-align: center;
+  margin: auto;
+}
 
+header {
+  background-color: #188AD0;
+  color: white;
+  padding: 1rem;
+}
 
+.score {
+  padding: 10px 0;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  width: 200px;
+  margin: 2rem auto;
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+}
 
+.icon {
+  text-transform: uppercase;
+  background: #188AD0;
+  padding: 10px 6px;
+  border-radius: 5px;
+}
 
+#user {
+  position: absolute;
+	top: 50%;
+	left: -57%;
+  transform: translate(-10%, -50%);
+  border: 3px solid rgb(57, 57, 226)
+}
 
+#comp {
+  position: absolute;
+	top: 50%;
+	right: -75%;
+  transform: translate(10%, -50%);
+  border: 3px solid darkred;
+  color: white;
+  background: red;
+}
 
+.result {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
 
+.choice {
+  display: inline-flex;  
+  padding: 1rem;  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
 
-
-
-
-
-
-
-
-
-
+.choice img {
+	filter: invert(100%);
+}
 
 #message {
-  color: red;
+  text-align: center;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;  
 }
+
+
