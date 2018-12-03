@@ -3,6 +3,7 @@ let compScore = 0;
 const userScore_span = document.querySelector('#user-score');
 const compScore_span = document.querySelector('#comp-score');
 const scoreBoard_div = document.querySelector('.score');
+const clear_button = document.querySelector('button');
 const result_p = document.querySelector('.result > p');
 const rock_div = document.getElementById('rock');
 const paper_div = document.getElementById('paper');
@@ -99,6 +100,12 @@ function draw(userChoice, compChoice) {
   result_p.innerHTML = `${convertResult(userChoice)}  Against  ${convertResult(compChoice)} . IT'S A DRAW!`;
 }
 
+function clearScore() {
+  userScore_span.innerHTML = '0';
+  compScore_span.innerHTML = '0';
+  userScore = 0;
+  compScore = 0;
+} 
 
 function main () {
 //event listeners
@@ -121,7 +128,13 @@ function main () {
   lizard_div.addEventListener('click', function() {
     game('l');
   })
+
+  clear_button.addEventListener('click', function() {
+    clearScore();
+  })
 }
+
+
 
 main();
 
